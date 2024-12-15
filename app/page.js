@@ -1,101 +1,92 @@
 import Image from "next/image";
+import Logo from "../public/frcBig.png"; // Import the logo
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+      {/* Hero Section */}
+      <section className="relative bg-frcGray text-frcWhite h-screen flex items-center justify-center text-center">
+        <div className="max-w-5xl px-6">
+          <div className="mb-4 flex justify-center">
+            <Image src={Logo} alt="Frequency Coin Logo" width={120} height={120} />
+          </div>
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-frcPurple">
+            Your Vibration, Your Reality
+          </h1>
+          <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+            Join the world’s first <span className="text-frcBlue">Vibration Economy</span>.
+            Frequency Coin (FRC) tokenizes dreams, thoughts, and intentions as NFTs
+            to empower personal and collective growth.
+          </p>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/ecosystem"
+            className="inline-block px-6 py-3 bg-frcBlue text-frcWhite font-semibold rounded hover:bg-frcPurple transition duration-300"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            Explore the Ecosystem
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      </section>
+
+      {/* Key Features Section */}
+      <section className="bg-frcGray py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center text-frcWhite mb-10">
+            Unlock the Power of Your Intentions
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Feature Cards */}
+            {[
+              { title: "DreamNFT", description: "Tokenize your dreams and aspirations into NFTs that inspire and grow with community support." },
+              { title: "Astral Message", description: "Send intentions to the universe with Astral NFTs—measurable energy that resonates with others." },
+              { title: "MindNFT", description: "Transform thoughts into actionable goals stored as MindNFTs on the blockchain." },
+              { title: "WishNFT", description: "Tokenize heartfelt wishes and watch them gain energy through community support." },
+            ].map((feature, index) => (
+              <div key={index} className="p-6 bg-frcWhite shadow-lg rounded-lg text-center">
+                <h3 className="text-2xl font-bold mb-4 text-frcPurple">{feature.title}</h3>
+                <p className="text-gray-700">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Call-to-Action */}
+      <section className="bg-frcBlue text-frcWhite py-16 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Join the Vibration Revolution
+        </h2>
+        <p className="text-lg mb-6">
+          Transform your dreams into reality. Explore the Frequency Coin Ecosystem today.
+        </p>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/about"
+          className="inline-block px-6 py-3 bg-frcWhite text-frcBlue font-semibold rounded hover:bg-frcPurple hover:text-frcWhite transition duration-300"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+          Learn More
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* Roadmap Section */}
+      <section className="bg-frcGray py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center text-frcWhite mb-10">
+            Roadmap to the Future
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { phase: "Phase 1: Q1 2025", description: "Whitepaper launch and community building." },
+              { phase: "Phase 2: Q2 2025", description: "Token presale and exchange listing." },
+              { phase: "Phase 3: Q3 2025", description: "NFT minting platform beta release." },
+            ].map((roadmap, index) => (
+              <div key={index} className="p-6 bg-frcWhite rounded-lg text-center shadow-lg">
+                <h3 className="text-xl font-bold mb-3 text-frcBlue">{roadmap.phase}</h3>
+                <p className="text-gray-700">{roadmap.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-frcGray text-frcWhite font-sans;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    @apply text-frcPurple font-bold;
+}
+
+a {
+    @apply text-frcBlue hover:text-frcPurple transition-colors duration-300;
+}
+
+button {
+    @apply bg-frcBlue text-frcWhite rounded px-4 py-2 font-semibold hover:bg-frcPurple transition-all;
+}
