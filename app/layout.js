@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "../styles/global.css"; // Single global CSS import
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "Frequency Coin",
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Analytics />
         <Navbar />
         {children}
       </body>

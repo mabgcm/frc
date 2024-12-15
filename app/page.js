@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Logo from "../public/frcBig.png"; // Import the logo
 
@@ -8,25 +9,26 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-frcGray text-frcWhite h-screen flex items-center justify-center text-center">
         <div className="max-w-5xl px-6">
-          <div className="mb-4 flex justify-center">
-            <Image src={Logo} alt="Frequency Coin Logo" width={120} height={120} />
+          <div className="mb-6 flex justify-center">
+            <Image src={Logo} alt="Frequency Coin Logo" width={100} height={100} className="animate-pulse" />
           </div>
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-frcPurple">
-            Your Vibration, Your Reality
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-frcPurple leading-tight">
+            Your Vibration, <br /> <span className="text-frcBlue">Your Reality</span>
           </h1>
           <p className="text-lg text-gray-300 mb-8 leading-relaxed">
             Join the world’s first <span className="text-frcBlue">Vibration Economy</span>.
-            Frequency Coin (FRC) tokenizes dreams, thoughts, and intentions as NFTs
-            to empower personal and collective growth.
+            Tokenize your dreams, thoughts, and intentions as NFTs to empower
+            personal and collective growth.
           </p>
           <a
             href="/ecosystem"
-            className="inline-block px-6 py-3 bg-frcBlue text-frcWhite font-semibold rounded hover:bg-frcPurple transition duration-300"
+            className="inline-block px-6 py-3 bg-frcBlue text-frcWhite font-bold rounded-lg hover:bg-frcPurple hover:scale-105 transition-all duration-300 shadow-md"
           >
             Explore the Ecosystem
           </a>
         </div>
       </section>
+
 
       {/* Key Features Section */}
       <section className="bg-frcGray py-16">
