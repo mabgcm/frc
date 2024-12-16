@@ -9,7 +9,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="fixed w-full z-50 bg-transparent">
+        <nav className="fixed w-full z-50 bg-blue-900 bg-opacity-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
                     {/* Logo */}
@@ -19,8 +19,8 @@ export default function Navbar() {
                                 <Image
                                     src={Logo}
                                     alt="Frequency Coin Logo"
-                                    width={60}
-                                    height={60}
+                                    width={75}
+                                    height={75}
                                     className="mr-2"
                                 />
                                 <span className="text-2xl font-extrabold text-frcWhite">
