@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "../public/frcBig.png"; // Replace 'logo.png' with your logo image file name
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +15,18 @@ export default function Navbar() {
                     {/* Logo */}
                     <div className="flex-shrink-0">
                         <Link href="/">
-                            <span className="text-2xl font-extrabold text-frcPurple cursor-pointer flex items-center">
-                                <div className="rounded-full bg-frcBlue p-2 mr-2">
-                                    <span className="text-frcWhite">FRC</span>
-                                </div>
-                                <span className="text-frcWhite">Frequency Coin</span>
-                            </span>
+                            <div className="flex items-center cursor-pointer">
+                                <Image
+                                    src={Logo} // Path to your logo image
+                                    alt="Frequency Coin Logo"
+                                    width={60} // Adjust the width as needed
+                                    height={60} // Adjust the height as needed
+                                    className="mr-2"
+                                />
+                                <span className="text-2xl font-extrabold text-frcWhite">
+                                    Frequency Coin
+                                </span>
+                            </div>
                         </Link>
                     </div>
 
