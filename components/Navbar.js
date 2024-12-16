@@ -90,22 +90,46 @@ export default function Navbar() {
             {isOpen && (
                 <div className="md:hidden bg-frcGray">
                     <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-                        <Link href="/" className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium">
+                        <Link
+                            href="/"
+                            onClick={() => setIsOpen(false)}
+                            className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium"
+                        >
                             Home
                         </Link>
-                        <Link href="/about" className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium">
+                        <Link
+                            href="/about"
+                            onClick={() => setIsOpen(false)}
+                            className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium"
+                        >
                             About
                         </Link>
-                        <Link href="/ecosystem" className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium">
+                        <Link
+                            href="/ecosystem"
+                            onClick={() => setIsOpen(false)}
+                            className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium"
+                        >
                             Ecosystem
                         </Link>
-                        <Link href="/roadmap" className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium">
+                        <Link
+                            href="/roadmap"
+                            onClick={() => setIsOpen(false)}
+                            className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium"
+                        >
                             Roadmap
                         </Link>
-                        <Link href="/community" className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium">
+                        <Link
+                            href="/community"
+                            onClick={() => setIsOpen(false)}
+                            className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium"
+                        >
                             Community
                         </Link>
-                        <Link href="/contact" className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium">
+                        <Link
+                            href="/contact"
+                            onClick={() => setIsOpen(false)}
+                            className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium"
+                        >
                             Contact
                         </Link>
                     </div>

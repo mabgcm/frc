@@ -44,30 +44,32 @@ export default function Home() {
               { title: "MindNFT", description: "Transform thoughts into actionable goals stored as MindNFTs on the blockchain." },
               { title: "WishNFT", description: "Tokenize heartfelt wishes and watch them gain energy through community support." },
             ].map((feature, index) => (
-              <div key={index} className="p-6 bg-frcWhite shadow-lg rounded-lg text-center">
+              <div key={index} className="p-6 bg-frcWhite shadow-lg rounded-xl text-center transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
                 <h3 className="text-2xl font-bold mb-4 text-frcPurple">{feature.title}</h3>
-                <p className="text-gray-700">{feature.description}</p>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
+
             ))}
           </div>
         </div>
       </section>
 
       {/* Call-to-Action */}
-      <section className="bg-frcBlue text-frcWhite py-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Join the Vibration Revolution
+      <section className="bg-gradient-to-r from-frcBlue to-frcPurple text-frcWhite py-16 text-center rounded-b-3xl">
+        <h2 className="text-4xl font-extrabold mb-4 tracking-wide">
+          Join the <span className="text-gray-100">Vibration Revolution</span>
         </h2>
         <p className="text-lg mb-6">
           Transform your dreams into reality. Explore the Frequency Coin Ecosystem today.
         </p>
         <a
           href="/about"
-          className="inline-block px-6 py-3 bg-frcWhite text-frcBlue font-semibold rounded hover:bg-frcPurple hover:text-frcWhite transition duration-300"
+          className="inline-block px-6 py-3 bg-white text-frcBlue font-bold rounded-lg hover:scale-105 transition-all duration-300 shadow-md"
         >
           Learn More
         </a>
       </section>
+
 
       {/* Roadmap Section */}
       <section className="bg-frcGray py-16">
@@ -81,10 +83,11 @@ export default function Home() {
               { phase: "Phase 2: Q2 2025", description: "Token presale and exchange listing." },
               { phase: "Phase 3: Q3 2025", description: "NFT minting platform beta release." },
             ].map((roadmap, index) => (
-              <div key={index} className="p-6 bg-frcWhite rounded-lg text-center shadow-lg">
+              <div className="p-6 bg-frcWhite rounded-lg text-center shadow-md transform hover:-translate-y-2 transition-all duration-300">
                 <h3 className="text-xl font-bold mb-3 text-frcBlue">{roadmap.phase}</h3>
-                <p className="text-gray-700">{roadmap.description}</p>
+                <p className="text-gray-600 leading-relaxed">{roadmap.description}</p>
               </div>
+
             ))}
           </div>
         </div>
