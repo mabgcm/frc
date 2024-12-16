@@ -56,7 +56,7 @@ export default function Navbar() {
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="relative w-12 h-12 flex items-center justify-center bg-transparent border-2 border-frcWhite rounded-full group transition-all duration-300 hover:border-frcPurple focus:outline-none"
+                            className="relative w-12 h-12 flex items-center justify-center bg-transparent border-2 border-frcWhite rounded-full group transition-all duration-300 hover:border-frcPurple focus:outline-none focus:bg-transparent active:bg-transparent"
                             aria-label="Toggle Menu"
                         >
                             {/* Horizontal Lines */}
