@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Logo from "../public/frcBig.png"; // Ensure this path is correct
-import { FaTelegramPlane } from "react-icons/fa"; // Telegram icon
+import { FaDiscord, FaTelegramPlane } from "react-icons/fa"; // Telegram icon
 import { FaXTwitter } from "react-icons/fa6"; // X (Twitter) icon
 
 export default function Footer() {
@@ -57,6 +57,15 @@ export default function Footer() {
                                 className="text-frcWhite hover:text-frcPurple transition-all duration-300"
                             >
                                 <FaTelegramPlane size={32} />
+                            </a>
+                            {/* Discord */}
+                            <a
+                                href="https://discord.gg/meDjjT2U"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-frcWhite hover:text-frcPurple transition-all duration-300"
+                            >
+                                <FaDiscord size={32} />
                             </a>
                         </div>
                     </div>
