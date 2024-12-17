@@ -145,7 +145,7 @@ export default function Contact() {
                                 rows="5"
                                 value={formData.message}
                                 onChange={handleChange}
-                                className="w-full p-3 border rounded-lg focus:ring focus:ring-frcBlue"
+                                className="w-full p-3 border rounded-lg focus:ring focus:ring-frcBlue bg-white text-gray-700 placeholder-gray-400"
                                 placeholder="Write your message here..."
                                 required
                             ></textarea>
