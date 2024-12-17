@@ -9,65 +9,53 @@ export default function Footer() {
         <>
             {/* Footer */}
             <footer className="bg-frcGray text-frcWhite py-8">
-                <div className="container mx-auto px-6">
-                    {/* Footer Top */}
-                    <div className="flex flex-col md:flex-row items-center justify-between pb-6 mb-6 border-b border-gray-700">
-                        {/* Slogan (Left) */}
-                        <div className="text-center md:text-left mb-4 md:mb-0">
-                            <h3 className="text-2xl font-bold text-frcPurple mb-2">Frequency Coin</h3>
-                            <p className="text-gray-400">"Your Vibration, Your Reality"</p>
-                            <div>
-                                <Image
-                                    src={Logo}
-                                    alt="Frequency Coin Logo"
-                                    width={180}
-                                    height={180}
-                                    className="mx-auto"
-                                />
-                            </div>
-                        </div>
+                <div className="container mx-auto px-4 text-center">
+                    {/* Logo */}
+                    <div className="mb-4">
+                        <Image
+                            src={Logo}
+                            alt="Frequency Coin Logo"
+                            width={120}
+                            height={120}
+                            className="mx-auto"
+                        />
+                    </div>
 
-                        {/* Logo (Center) */}
-                        {/* <div className="mb-4 md:mb-0">
-                            <Image
-                                src={Logo}
-                                alt="Frequency Coin Logo"
-                                width={180}
-                                height={180}
-                                className="mx-auto"
-                            />
-                        </div> */}
+                    {/* Slogan */}
+                    <div className="mb-4">
+                        <h3 className="text-2xl font-bold text-frcPurple mb-2">Frequency Coin</h3>
+                        <p className="text-frcWhite">"Your Vibration, Your Reality"</p>
+                    </div>
 
-                        {/* Socials (Right) */}
-                        <div className="flex space-x-8">
-                            {/* X (Twitter) */}
-                            <a
-                                href="https://twitter.com/CoinFrequency"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-frcWhite hover:text-frcPurple transition-all duration-300"
-                            >
-                                <FaXTwitter size={32} />
-                            </a>
-                            {/* Telegram */}
-                            <a
-                                href="https://t.me/frequency_coin"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-frcWhite hover:text-frcPurple transition-all duration-300"
-                            >
-                                <FaTelegramPlane size={32} />
-                            </a>
-                            {/* Discord */}
-                            <a
-                                href="https://discord.gg/meDjjT2U"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-frcWhite hover:text-frcPurple transition-all duration-300"
-                            >
-                                <FaDiscord size={32} />
-                            </a>
-                        </div>
+                    {/* Socials */}
+                    <div className="flex justify-center space-x-8 mb-6">
+                        {/* X (Twitter) */}
+                        <a
+                            href="https://twitter.com/CoinFrequency"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-frcWhite hover:text-frcBlue transition-all duration-300"
+                        >
+                            <FaXTwitter size={32} />
+                        </a>
+                        {/* Telegram */}
+                        <a
+                            href="https://t.me/frequency_coin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-frcWhite hover:text-frcBlue transition-all duration-300"
+                        >
+                            <FaTelegramPlane size={32} />
+                        </a>
+                        {/* Discord */}
+                        <a
+                            href="https://discord.gg/meDjjT2U"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-frcWhite hover:text-frcBlue transition-all duration-300"
+                        >
+                            <FaDiscord size={32} />
+                        </a>
                     </div>
 
                     {/* Footer Bottom */}
