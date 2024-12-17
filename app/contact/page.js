@@ -117,7 +117,7 @@ export default function Contact() {
                                 id="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className="w-full p-3 border rounded-lg focus:ring focus:ring-frcBlue"
+                                className="w-full p-3 border rounded-lg focus:ring focus:ring-frcBlue bg-white text-gray-700"
                                 placeholder="Your Name"
                                 required
                             />
@@ -131,7 +131,7 @@ export default function Contact() {
                                 id="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="w-full p-3 border rounded-lg focus:ring focus:ring-frcBlue"
+                                className="w-full p-3 border rounded-lg focus:ring focus:ring-frcBlue bg-white text-gray-700"
                                 placeholder="Your Email"
                                 required
                             />

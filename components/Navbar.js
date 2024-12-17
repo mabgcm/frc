@@ -1,15 +1,29 @@
 "use client";
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../public/frcBig.png";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrollOpacity, setScrollOpacity] = useState(0.3); // Default initial opacity
+
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        const newOpacity = Math.min(0.3 + scrollY / 400, 1); // Increase opacity on scroll
+        setScrollOpacity(newOpacity);
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <nav className="fixed w-full z-50 bg-blue-900 bg-opacity-20">
+        <nav
+            className="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+            style={{ backgroundColor: `rgba(31, 41, 55, ${scrollOpacity})` }} // Tailwind gray-800 dynamic opacity
+        >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16 items-center">
                     {/* Logo */}
@@ -56,10 +70,10 @@ export default function Navbar() {
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="relative w-12 h-12 flex items-center justify-center bg-transparent border-2 border-frcWhite rounded-full group transition-all duration-300 hover:border-frcPurple focus:outline-none focus:bg-transparent active:bg-transparent"
+                            className="relative w-12 h-12 flex items-center justify-center bg-transparent border-2 border-frcWhite rounded-full group transition-all duration-300 hover:border-frcPurple focus:outline-none"
                             aria-label="Toggle Menu"
                         >
-                            {/* Horizontal Lines */}
+                            {/* Menu Button */}
                             <span
                                 className={`block absolute h-0.5 w-6 bg-frcWhite transform transition duration-300 ease-in-out ${isOpen ? "rotate-45 translate-y-0" : "-translate-y-2"
                                     } group-hover:bg-frcPurple`}
