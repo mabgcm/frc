@@ -2,15 +2,25 @@
 import Image from "next/image";
 import imag from "../../public/images/community.jpg";
 import Link from "next/link";
+import aboutImage from "../../public/images/about-bg.jpg";
 
 export default function About() {
     return (
         <div className="bg-white">
+            {/* Hero Section */}
+            <section className="relative bg-frcGray text-frcWhite h-[60vh] flex items-center justify-center text-center">
+                <div
+                    className="absolute inset-0 bg-cover bg-center opacity-90"
+                    style={{ backgroundImage: `url(${aboutImage.src})` }}
+                ></div>
+                <div className="relative z-10 px-6">
+                    <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-frcPurple">
+                        What is <span className="text-frcBlue">Frequency Coin</span>?
+                    </h1>
+                </div>
+            </section>
             <div className="container mx-auto py-16 px-6">
                 {/* Header Section */}
-                <h1 className="text-5xl font-bold text-gray-900 mb-8 mt-20 text-center">
-                    What is <span className="text-frcPurple">Frequency Coin</span>?
-                </h1>
                 <p className="text-gray-900 text-center text-xl leading-relaxed mb-12 max-w-3xl mx-auto">
                     Frequency Coin (FRC) combines blockchain innovation with the limitless power of
                     energy and manifestation. Our mission is to create a{" "}
