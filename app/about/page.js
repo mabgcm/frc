@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import imag from "../../public/images/community.jpg";
+import Link from "next/link";
 
 export default function About() {
     return (
@@ -32,48 +33,58 @@ export default function About() {
                     </p>
                 </section>
 
-                {/* How It Works */}
+                {/* Tokenomics Section */}
                 <section className="mb-12">
                     <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">
-                        How It Works
+                        Tokenomics
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {/* Step 1 */}
-                        <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                            <h3 className="text-xl font-bold text-frcPurple mb-3 text-center">
-                                Step 1: Mint NFTs
-                            </h3>
-                            <p className="text-gray-600 text-lg text-center">
-                                Tokenize your dreams, thoughts, and intentions into{" "}
-                                <span className="font-bold">DreamNFTs</span>,{" "}
-                                <span className="font-bold">MindNFTs</span>, or{" "}
-                                <span className="font-bold">WishNFTs</span> using Frequency Coin (FRC).
-                            </p>
+                    <p className="text-gray-700 text-xl text-center mb-6 max-w-4xl mx-auto">
+                        The Frequency Coin (FRC) token is the backbone of our ecosystem, powering NFT
+                        creation, staking rewards, and energy renewal.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                        <div className="p-4 bg-gray-100 rounded-lg shadow-md text-center">
+                            <h3 className="text-frcPurple font-bold text-lg">Community Rewards</h3>
+                            <p className="text-gray-600 text-sm">50% - For NFT interactions & staking</p>
                         </div>
-                        {/* Step 2 */}
-                        <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                            <h3 className="text-xl font-bold text-frcPurple mb-3 text-center">
-                                Step 2: Share Your Energy
-                            </h3>
-                            <p className="text-gray-600 text-lg text-center">
-                                Connect your intentions with the community, amplify your energy, and create
-                                measurable vibrations across the ecosystem.
-                            </p>
+                        <div className="p-4 bg-gray-100 rounded-lg shadow-md text-center">
+                            <h3 className="text-frcPurple font-bold text-lg">Development & Marketing</h3>
+                            <p className="text-gray-600 text-sm">20% - Platform growth & promotion</p>
                         </div>
-                        {/* Step 3 */}
-                        <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-                            <h3 className="text-xl font-bold text-frcPurple mb-3 text-center">
-                                Step 3: Empower and Earn
-                            </h3>
-                            <p className="text-gray-600 text-lg text-center">
-                                Grow your vibrations, <span className="font-bold">trade NFTs</span>, and
-                                participate in the energy staking system to earn rewards and create value.
-                            </p>
+                        <div className="p-4 bg-gray-100 rounded-lg shadow-md text-center">
+                            <h3 className="text-frcPurple font-bold text-lg">Reserve & Liquidity</h3>
+                            <p className="text-gray-600 text-sm">15% - Ensures market liquidity</p>
+                        </div>
+                        <div className="p-4 bg-gray-100 rounded-lg shadow-md text-center">
+                            <h3 className="text-frcPurple font-bold text-lg">Team & Advisors</h3>
+                            <p className="text-gray-600 text-sm">10% - Rewards for core contributors</p>
+                        </div>
+                        <div className="p-4 bg-gray-100 rounded-lg shadow-md text-center">
+                            <h3 className="text-frcPurple font-bold text-lg">Energy Renewal Fund</h3>
+                            <p className="text-gray-600 text-sm">5% - Incentives for energy boosts</p>
                         </div>
                     </div>
                 </section>
 
-                {/* Community & Innovation */}
+                {/* Whitepaper Download */}
+                <section className="text-center mb-12">
+                    <h2 className="text-3xl font-semibold text-gray-900 mb-4">
+                        Learn More in Our Whitepaper
+                    </h2>
+                    <p className="text-gray-700 text-lg mb-6">
+                        Explore the full details of our tokenomics, roadmap, and ecosystem.
+                    </p>
+                    <Link
+                        href="/FRC_Whitepaper.pdf"
+                        download
+                        target="_blank"
+                        className="inline-block px-6 py-3 bg-frcPurple text-frcWhite font-bold rounded-lg hover:bg-frcBlue hover:scale-105 transition-all duration-300 shadow-md"
+                    >
+                        Download Whitepaper
+                    </Link>
+                </section>
+
+                {/* Community Section */}
                 <section>
                     <h2 className="text-3xl font-semibold text-gray-900 mb-4 text-center">
                         Community and Innovation
@@ -85,8 +96,6 @@ export default function About() {
                         that every user’s dreams and intentions are{" "}
                         <span className="font-bold">protected, measurable, and impactful</span>.
                     </p>
-
-                    {/* Image Placeholder */}
                     <Image
                         src={imag}
                         alt="Community and blockchain innovation"
