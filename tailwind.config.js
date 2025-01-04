@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        frcPurple: "#CB6CE6", // Primary purple
-        frcBlue: "#38B6FF",   // Accent blue
-        frcGray: "#3E4149",   // Dark gray background
-        frcWhite: "#FFFFFF",  // White text
+        frcPurple: "#E76F51", // Primary purple
+        frcBlue: "#F4A261",   // Accent blue
+        frcGray: "#2B2B3A",   // Dark gray background
+        frcWhite: "#F5F5F5",  // White text
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"], // Replace with your desired font

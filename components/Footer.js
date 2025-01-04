@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Logo from "../public/frcBig.png"; // Ensure this path is correct
+import Logo from "../public/frc_logo.png"; // Ensure this path is correct
 import { FaDiscord, FaTelegramPlane } from "react-icons/fa"; // Telegram icon
 import { FaXTwitter } from "react-icons/fa6"; // X (Twitter) icon
 

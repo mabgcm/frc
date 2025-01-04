@@ -20,3 +20,45 @@ a {
 button {
     @apply bg-frcBlue text-frcWhite rounded px-4 py-2 font-semibold hover:bg-frcPurple transition-all;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient {
+    background-size: 200% 200%;
+    display: inline-block;
+    animation-timing-function: linear;
+}
+
+@keyframes dynamicFade {
+    0% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}
+
+.animate-dynamicFade {
+    display: inline-block;
+    animation-timing-function: linear;
+}

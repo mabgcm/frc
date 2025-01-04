@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../public/frcBig.png";
+import Logo from "../public/frc_logo.png";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,8 +33,8 @@ export default function Navbar() {
                                 <Image
                                     src={Logo}
                                     alt="Frequency Coin Logo"
-                                    width={75}
-                                    height={75}
+                                    width={60}
+                                    height={60}
                                     className="mr-2"
                                 />
                                 <span className="text-2xl font-extrabold text-frcWhite">
