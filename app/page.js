@@ -22,7 +22,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="max-w-5xl px-6 relative z-10 mt-16 md:mt-0">
-          <div className="mb-6 flex justify-center">
+          <div className="mb-6 flex justify-center mt-16 md:mt-0">
             <Image
               src={Logo}
               alt="Frequency Coin Logo"
