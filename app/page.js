@@ -21,7 +21,7 @@ export default function Home() {
         ></div>
 
         {/* Content */}
-        <div className="max-w-5xl px-6 relative z-10 mt-10 md:mt-0">
+        <div className="max-w-5xl px-6 relative z-10 mt-16 md:mt-0">
           <div className="mb-6 flex justify-center">
             <Image
               src={Logo}
