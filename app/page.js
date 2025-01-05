@@ -5,6 +5,7 @@ import { HiOutlineCubeTransparent } from "react-icons/hi2";
 import { MdOutlinePrivateConnectivity } from "react-icons/md";
 import { FaFileContract } from "react-icons/fa6";
 import { RiUserCommunityFill } from "react-icons/ri";
+import Countdown from "@/components/presale";
 
 
 
@@ -63,7 +64,7 @@ export default function Home() {
         </div>
       </section>
 
-
+      <Countdown />
 
 
       <section className="bg-frcWhite py-16">

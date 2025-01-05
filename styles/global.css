@@ -62,3 +62,26 @@ button {
     display: inline-block;
     animation-timing-function: linear;
 }
+
+.countdown {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #1e3a8a, #6d28d9, #1e3a8a);
+    color: white;
+}
+
+.countdown h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.countdown .time-box {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 2rem;
+}
+
+.countdown .time-box span {
+    display: block;
+    font-size: 4rem;
+}
