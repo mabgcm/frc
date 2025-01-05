@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Countdown />
+
 
 
       <section className="bg-frcWhite py-16">
@@ -128,7 +128,7 @@ export default function Home() {
       </section>
 
 
-
+      <Countdown />
 
       {/* Call-to-Action */}
       <section className="bg-frcWhite py-16 text-center rounded-b-3xl">
