@@ -11,7 +11,7 @@ export default function About() {
     return (
         <div className="bg-white">
             {/* Hero Section */}
-            <section className="relative bg-frcGray text-frcWhite h-[30vh] flex items-center justify-center text-center">
+            <section className="relative bg-frcGray text-frcWhite h-[50vh] md:h-[30vh] flex items-center justify-center text-center">
                 <div
                     className="absolute inset-0 bg-cover bg-center opacity-90"
                     style={{
