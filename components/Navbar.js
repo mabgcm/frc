@@ -64,6 +64,14 @@ export default function Navbar() {
                         <Link href="/contact" className="text-frcWhite hover:text-frcPurple transition">
                             Contact
                         </Link>
+                        <a
+                            href="/whitepaper.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-frcWhite hover:text-frcPurple transition"
+                        >
+                            Whitepaper
+                        </a>
                     </div>
 
                     {/* Mobile Menu Button */}
