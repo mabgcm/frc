@@ -28,24 +28,24 @@ const Countdown = () => {
     }, [presaleDate]);
 
     return (
-        <section className="relative w-full bg-gradient-to-r from-frcBlue via-frcPurple to-frcBlue text-white py-16">
-            <div className="container mx-auto px-6 text-center">
-                <h2 className="text-5xl font-bold mb-8 text-frcGray">🚀 Presale Countdown 🚀</h2>
-                <div className="flex justify-center items-center space-x-8 text-2xl md:text-4xl font-bold">
+        <section className="relative w-full bg-gradient-to-r from-frcBlue via-frcPurple to-frcBlue text-white py-16 sm:py-20">
+            <div className="container mx-auto px-4 sm:px-6 text-center">
+                <h2 className="text-3xl sm:text-5xl font-bold mb-6 sm:mb-8 text-frcGray">🚀 Presale Countdown 🚀</h2>
+                <div className="flex flex-wrap justify-center items-center space-x-4 sm:space-x-8 text-xl sm:text-2xl font-bold">
                     <div className="flex flex-col items-center">
-                        <span className="text-6xl">{timeLeft.days}</span>
+                        <span className="text-4xl sm:text-6xl">{timeLeft.days}</span>
                         <span>Days</span>
                     </div>
                     <div className="flex flex-col items-center">
-                        <span className="text-6xl">{timeLeft.hours}</span>
+                        <span className="text-4xl sm:text-6xl">{timeLeft.hours}</span>
                         <span>Hours</span>
                     </div>
                     <div className="flex flex-col items-center">
-                        <span className="text-6xl">{timeLeft.minutes}</span>
+                        <span className="text-4xl sm:text-6xl">{timeLeft.minutes}</span>
                         <span>Minutes</span>
                     </div>
                     <div className="flex flex-col items-center">
-                        <span className="text-6xl">{timeLeft.seconds}</span>
+                        <span className="text-4xl sm:text-6xl">{timeLeft.seconds}</span>
                         <span>Seconds</span>
                     </div>
                 </div>
