@@ -43,8 +43,8 @@ export default function Home() {
         {/* Content */}
         <div className="max-w-5xl px-6 relative z-10"
           style={{
-            paddingBottom: isSmallScreen ? "200px" : "32px", // 1rem (16px) for small, 2rem (32px) for larger
-            paddingTop: isSmallScreen ? "16px" : "32px",
+            paddingBottom: isSmallScreen ? "150px" : "32px", // 1rem (16px) for small, 2rem (32px) for larger
+            paddingTop: isSmallScreen ? "150px" : "32px",
           }}>
           <div className="mb-6 flex justify-center mt-16 md:mt-0">
             <Image
@@ -80,7 +80,7 @@ export default function Home() {
           </p>
           <a
             href="/ecosystem"
-            className="px-6 py-3 bg-frcBlue text-frcWhite font-bold rounded-lg hover:bg-frcPurple hover:text-frcWhite hover:scale-105 transition-all duration-300 shadow-md"
+            className="hidden sm:inline-block px-6 py-3 bg-frcBlue text-frcWhite font-bold rounded-lg hover:bg-frcPurple hover:text-frcWhite hover:scale-105 transition-all duration-300 shadow-md"
           >
             Explore the Ecosystem
           </a>
