@@ -145,6 +145,13 @@ export default function Navbar() {
                         >
                             Contact
                         </Link>
+                        <Link
+                            href="/whitepaper.pdf"
+                            onClick={() => setIsOpen(false)}
+                            className="block text-frcWhite hover:text-frcPurple px-3 py-2 rounded-md text-base font-medium"
+                        >
+                            Whitepaper
+                        </Link>
                     </div>
                 </div>
             )}
