@@ -6,11 +6,30 @@ import { MdOutlinePrivateConnectivity } from "react-icons/md";
 import { FaFileContract } from "react-icons/fa6";
 import { RiUserCommunityFill } from "react-icons/ri";
 import Countdown from "@/components/presale";
+import React, { useEffect, useState } from "react";
+
 
 
 
 
 export default function Home() {
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      // Check if the screen width is less than 640px (small screens in Tailwind)
+      setIsSmallScreen(window.innerWidth < 640);
+    };
+
+    checkScreenSize(); // Initial check
+    window.addEventListener("resize", checkScreenSize); // Add resize listener
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize); // Cleanup
+    };
+  }, []);
+
   return (
     <>
 
@@ -22,7 +41,11 @@ export default function Home() {
         ></div>
 
         {/* Content */}
-        <div className="max-w-5xl px-6 relative z-10 mt-16 md:mt-0">
+        <div className="max-w-5xl px-6 relative z-10"
+          style={{
+            paddingBottom: isSmallScreen ? "200px" : "32px", // 1rem (16px) for small, 2rem (32px) for larger
+            paddingTop: isSmallScreen ? "16px" : "32px",
+          }}>
           <div className="mb-6 flex justify-center mt-16 md:mt-0">
             <Image
               src={Logo}
@@ -57,7 +80,7 @@ export default function Home() {
           </p>
           <a
             href="/ecosystem"
-            className="hidden sm:inline-block px-6 py-3 bg-frcBlue text-frcWhite font-bold rounded-lg hover:bg-frcPurple hover:text-frcWhite hover:scale-105 transition-all duration-300 shadow-md"
+            className="px-6 py-3 bg-frcBlue text-frcWhite font-bold rounded-lg hover:bg-frcPurple hover:text-frcWhite hover:scale-105 transition-all duration-300 shadow-md"
           >
             Explore the Ecosystem
           </a>
