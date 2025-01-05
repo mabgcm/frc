@@ -44,7 +44,10 @@ export default function Contact() {
             <section className="relative bg-frcGray text-frcWhite h-[50vh] md:h-[30vh] flex items-center justify-center text-center">
                 <div
                     className="absolute inset-0 bg-cover bg-center opacity-90"
-                    style={{ backgroundImage: `url(${contactImage.src})` }}
+                    style={{
+                        backgroundImage: `url(${contactImage.src})`,
+                        animation: "bgShift 12s ease-in-out infinite",
+                    }}
                 ></div>
                 <div className="relative z-10 px-6">
                     <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-frcPurple animate-fadeUp">
@@ -55,10 +58,10 @@ export default function Contact() {
                         amplify the energy together.
                     </p>
                 </div>
-            </section>
+            </section >
 
             {/* Contact Information */}
-            <section className="bg-white py-16">
+            <section section section className="bg-white py-16" >
                 <div className="container mx-auto px-6">
                     <h2 className="text-4xl font-bold text-center text-frcGray mb-10 animate-fadeUp">
                         Connect with Us
@@ -101,10 +104,10 @@ export default function Contact() {
                         </a>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Contact Form */}
-            <section className="py-16 bg-gray-100">
+            <section section section className="py-16 bg-gray-100" >
                 <div className="container mx-auto px-6">
                     <h2 className="text-4xl font-bold text-center text-frcGray mb-10">Send Us a Message</h2>
                     <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
@@ -159,10 +162,10 @@ export default function Contact() {
                     </form>
                     {status && <p className="text-center text-gray-700 mt-6">{status}</p>}
                 </div>
-            </section>
+            </section >
 
             {/* Custom Animations */}
-            <style jsx>{`
+            < style style jsx > {`
                 @keyframes bgShift {
                     0% {
                         background-position: 0% 50%;
@@ -187,7 +190,7 @@ export default function Contact() {
                         transform: translateY(0);
                     }
                 }
-            `}</style>
+            `}</ style>
         </>
     );
 }
