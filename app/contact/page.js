@@ -41,16 +41,16 @@ export default function Contact() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative bg-frcGray text-frcWhite h-[60vh] flex items-center justify-center text-center">
+            <section className="relative bg-frcGray text-frcWhite h-[30vh] flex items-center justify-center text-center">
                 <div
                     className="absolute inset-0 bg-cover bg-center opacity-90"
                     style={{ backgroundImage: `url(${contactImage.src})` }}
                 ></div>
                 <div className="relative z-10 px-6">
-                    <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-frcPurple">
+                    <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-frcPurple animate-fadeUp">
                         Contact <span className="text-frcBlue">Frequency Coin</span>
                     </h1>
-                    <p className="text-lg text-frcWhite max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-lg text-frcWhite max-w-2xl mx-auto leading-relaxed animate-fadeUp">
                         Have questions, feedback, or want to connect with our team? Reach out and let's
                         amplify the energy together.
                     </p>
@@ -60,7 +60,7 @@ export default function Contact() {
             {/* Contact Information */}
             <section className="bg-white py-16">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-4xl font-bold text-center text-frcGray mb-10">
+                    <h2 className="text-4xl font-bold text-center text-frcGray mb-10 animate-fadeUp">
                         Connect with Us
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -160,6 +160,34 @@ export default function Contact() {
                     {status && <p className="text-center text-gray-700 mt-6">{status}</p>}
                 </div>
             </section>
+
+            {/* Custom Animations */}
+            <style jsx>{`
+                @keyframes bgShift {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 100% 50%;
+                    }
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+                .animate-fadeUp {
+                    animation: fadeUp 1.5s ease-in-out both;
+                }
+                @keyframes fadeUp {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            `}</style>
         </>
     );
 }

@@ -1,118 +1,165 @@
 "use client";
 import Image from "next/image";
-import imag from "../../public/images/community.jpg";
-import Link from "next/link";
 import aboutImage from "../../public/images/about-bg.jpg";
+import communityImage from "../../public/images/community.jpg";
+import { HiOutlineCubeTransparent } from "react-icons/hi2";
+import { MdOutlinePrivateConnectivity } from "react-icons/md";
+import { FaFileContract } from "react-icons/fa6";
+import { RiUserCommunityFill } from "react-icons/ri";
 
 export default function About() {
     return (
         <div className="bg-white">
             {/* Hero Section */}
-            <section className="relative bg-frcGray text-frcWhite h-[60vh] flex items-center justify-center text-center">
+            <section className="relative bg-frcGray text-frcWhite h-[30vh] flex items-center justify-center text-center">
                 <div
                     className="absolute inset-0 bg-cover bg-center opacity-90"
-                    style={{ backgroundImage: `url(${aboutImage.src})` }}
+                    style={{
+                        backgroundImage: `url(${aboutImage.src})`,
+                        animation: "bgShift 12s ease-in-out infinite",
+                    }}
                 ></div>
                 <div className="relative z-10 px-6">
-                    <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-frcPurple">
-                        What is <span className="text-frcBlue">Frequency Coin</span>?
+                    <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-frcPurple animate-fadeUp">
+                        About <span className="text-frcBlue">Frequency Coin</span>
                     </h1>
                 </div>
             </section>
-            <div className="container mx-auto py-16 px-6">
-                {/* Header Section */}
-                <p className="text-gray-900 text-center text-xl leading-relaxed mb-12 max-w-3xl mx-auto">
-                    Frequency Coin (FRC) combines blockchain innovation with the limitless power of
-                    energy and manifestation. Our mission is to create a{" "}
-                    <span className="font-bold">vibration economy</span>, empowering users to tokenize
-                    their dreams, thoughts, and intentions into NFTs that resonate with real value and
-                    measurable impact.
-                </p>
 
-                {/* Vision Section */}
-                <section className="mb-12">
-                    <h2 className="text-3xl font-semibold text-gray-900 mb-4 text-center">
-                        Our Vision
-                    </h2>
-                    <p className="text-gray-700 text-xl leading-relaxed text-center max-w-4xl mx-auto">
-                        We aim to establish a <span className="font-bold">global ecosystem</span> where
-                        individuals can manifest their intentions into reality using{" "}
-                        <span className="font-bold">Frequency Coin (FRC)</span>. By bridging the
-                        metaphysical world of thoughts and energy with blockchain technology, we’re
-                        building a future where positive vibrations drive real-world value.
+            <div className="container mx-auto py-16 px-6">
+                {/* Introduction Section */}
+                <section className="mb-12 text-center">
+                    <p className="text-gray-900 text-xl leading-relaxed mb-8 max-w-3xl mx-auto animate-fadeUp">
+                        Frequency Coin (FRC) is a blockchain-powered platform revolutionizing financial aid by ensuring transparency, security, and measurable impact. Built on trust and community-driven innovation, FRC connects donors and recipients through a secure, transparent ecosystem.
                     </p>
                 </section>
 
-                {/* Tokenomics Section */}
+                {/* Mission Section */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">
-                        Tokenomics
+                    <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center animate-fadeUp">
+                        Our Mission
                     </h2>
-                    <p className="text-gray-700 text-xl text-center mb-6 max-w-4xl mx-auto">
-                        The Frequency Coin (FRC) token is the backbone of our ecosystem, powering NFT
-                        creation, staking rewards, and energy renewal.
+                    <p className="text-gray-700 text-xl leading-relaxed text-center max-w-4xl mx-auto animate-fadeUp">
+                        To empower individuals and communities by bridging blockchain technology with financial aid. Frequency Coin ensures every donation is traceable, secure, and impactful, fostering a global ecosystem of trust and generosity.
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-                        <div className="p-4 bg-gray-100 rounded-lg shadow-md text-center">
-                            <h3 className="text-frcPurple font-bold text-lg">Community Rewards</h3>
-                            <p className="text-gray-600 text-sm">50% - For NFT interactions & staking</p>
-                        </div>
-                        <div className="p-4 bg-gray-100 rounded-lg shadow-md text-center">
-                            <h3 className="text-frcPurple font-bold text-lg">Development & Marketing</h3>
-                            <p className="text-gray-600 text-sm">20% - Platform growth & promotion</p>
-                        </div>
-                        <div className="p-4 bg-gray-100 rounded-lg shadow-md text-center">
-                            <h3 className="text-frcPurple font-bold text-lg">Reserve & Liquidity</h3>
-                            <p className="text-gray-600 text-sm">15% - Ensures market liquidity</p>
-                        </div>
-                        <div className="p-4 bg-gray-100 rounded-lg shadow-md text-center">
-                            <h3 className="text-frcPurple font-bold text-lg">Team & Advisors</h3>
-                            <p className="text-gray-600 text-sm">10% - Rewards for core contributors</p>
-                        </div>
-                        <div className="p-4 bg-gray-100 rounded-lg shadow-md text-center">
-                            <h3 className="text-frcPurple font-bold text-lg">Energy Renewal Fund</h3>
-                            <p className="text-gray-600 text-sm">5% - Incentives for energy boosts</p>
-                        </div>
+                </section>
+
+                {/* Features Section */}
+                <section className="mb-12">
+                    <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center animate-fadeUp">
+                        Why Choose Frequency Coin?
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {[
+                            {
+                                title: "Blockchain Transparency",
+                                description:
+                                    "Track every transaction securely on the blockchain. See the real-time impact of your donations.",
+                                icon: <HiOutlineCubeTransparent />,
+                                bgColor: "bg-blue-100",
+                                iconColor: "text-blue-600",
+                            },
+                            {
+                                title: "Secure and Private",
+                                description:
+                                    "Your identity and funds are protected with advanced encryption and privacy protocols.",
+                                icon: <MdOutlinePrivateConnectivity />,
+                                bgColor: "bg-green-100",
+                                iconColor: "text-green-600",
+                            },
+                            {
+                                title: "Smart Contracts",
+                                description:
+                                    "Automated fund management ensures donations reach the intended recipient only when goals are met.",
+                                icon: <FaFileContract />,
+                                bgColor: "bg-purple-100",
+                                iconColor: "text-purple-600",
+                            },
+                            {
+                                title: "Community Driven",
+                                description:
+                                    "Support meaningful projects and collaborate with a like-minded community to create change.",
+                                icon: <RiUserCommunityFill />,
+                                bgColor: "bg-yellow-100",
+                                iconColor: "text-yellow-600",
+                            },
+                        ].map((feature, index) => (
+                            <div
+                                key={index}
+                                className={`p-6 ${feature.bgColor} shadow-lg rounded-xl text-center transform hover:scale-105 hover:shadow-2xl transition-all duration-300`}
+                            >
+                                <div
+                                    className={`mb-4 w-16 h-16 mx-auto flex items-center justify-center rounded-full ${feature.iconColor} bg-white shadow-md`}
+                                >
+                                    <div className="text-5xl">{feature.icon}</div>
+                                </div>
+                                <h3 className="text-xl font-bold text-frcGray mb-2">{feature.title}</h3>
+                                <p className="text-gray-700">{feature.description}</p>
+                            </div>
+                        ))}
                     </div>
                 </section>
 
-                {/* Whitepaper Download */}
-                <section className="text-center mb-12">
-                    <h2 className="text-3xl font-semibold text-gray-900 mb-4">
-                        Learn More in Our Whitepaper
-                    </h2>
-                    <p className="text-gray-700 text-lg mb-6">
-                        Explore the full details of our tokenomics, roadmap, and ecosystem.
-                    </p>
-                    <Link
-                        href="/FRC_Whitepaper.pdf"
-                        download
-                        target="_blank"
-                        className="inline-block px-6 py-3 bg-frcPurple text-frcWhite font-bold rounded-lg hover:bg-frcBlue hover:scale-105 transition-all duration-300 shadow-md"
-                    >
-                        Download Whitepaper
-                    </Link>
-                </section>
-
                 {/* Community Section */}
-                <section>
-                    <h2 className="text-3xl font-semibold text-gray-900 mb-4 text-center">
-                        Community and Innovation
+                <section className="text-center mb-12">
+                    <h2 className="text-3xl font-semibold text-gray-900 mb-6 animate-fadeUp">
+                        A Trusted Community
                     </h2>
-                    <p className="text-gray-700 text-xl leading-relaxed text-center max-w-4xl mx-auto mb-8">
-                        At the heart of Frequency Coin lies a{" "}
-                        <span className="font-bold">supportive community</span> and a commitment to
-                        innovation. By leveraging blockchain’s transparency and security, FRC ensures
-                        that every user’s dreams and intentions are{" "}
-                        <span className="font-bold">protected, measurable, and impactful</span>.
+                    <p className="text-gray-700 text-xl leading-relaxed max-w-4xl mx-auto mb-8 animate-fadeUp">
+                        Frequency Coin thrives on a supportive community and a commitment to innovation. Every donation and transaction is secure, traceable, and impactful, ensuring confidence for both donors and recipients.
                     </p>
                     <Image
-                        src={imag}
-                        alt="Community and blockchain innovation"
+                        src={communityImage}
+                        alt="Community at Frequency Coin"
                         className="rounded-lg mx-auto shadow-lg"
                     />
                 </section>
+
+                {/* Whitepaper Section */}
+                <section className="text-center">
+                    <h2 className="text-3xl font-semibold text-gray-900 mb-4 animate-fadeUp">
+                        Learn More About Frequency Coin
+                    </h2>
+                    <p className="text-gray-700 text-lg mb-6 animate-fadeUp">
+                        Explore the detailed whitepaper to understand our vision, mission, and roadmap in depth.
+                    </p>
+                    <a
+                        href="/FRC_Whitepaper.pdf"
+                        download
+                        className="inline-block px-6 py-3 bg-frcPurple text-frcWhite font-bold rounded-lg hover:bg-frcBlue hover:scale-105 transition-all duration-300 shadow-md"
+                    >
+                        Download Whitepaper
+                    </a>
+                </section>
             </div>
+
+            {/* Custom Animations */}
+            <style jsx>{`
+        @keyframes bgShift {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+        .animate-fadeUp {
+          animation: fadeUp 1.5s ease-in-out both;
+        }
+        @keyframes fadeUp {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
         </div>
     );
 }

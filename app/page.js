@@ -31,7 +31,7 @@ export default function Home() {
               className="animate-pulse"
             />
           </div>
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6" style={{ lineHeight: "1.2" }}>
             <span
               className="bg-gradient-to-r from-frcPurple via-frcBlue to-frcPurple text-transparent bg-clip-text animate-gradient"
               style={{
