@@ -8,10 +8,6 @@ import { RiUserCommunityFill } from "react-icons/ri";
 import Countdown from "@/components/presale";
 import React, { useEffect, useState } from "react";
 
-
-
-
-
 export default function Home() {
 
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -43,8 +39,8 @@ export default function Home() {
         {/* Content */}
         <div className="max-w-5xl px-6 relative z-10"
           style={{
-            paddingBottom: isSmallScreen ? "150px" : "32px", // 1rem (16px) for small, 2rem (32px) for larger
-            paddingTop: isSmallScreen ? "150px" : "32px",
+            marginBottom: isSmallScreen ? "250px" : "32px", // 1rem (16px) for small, 2rem (32px) for larger
+            paddingTop: isSmallScreen ? "350px" : "32px",
           }}>
           <div className="mb-6 flex justify-center mt-16 md:mt-0">
             <Image
