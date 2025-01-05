@@ -61,7 +61,7 @@ export default function Contact() {
             </section >
 
             {/* Contact Information */}
-            <section section section className="bg-white py-16" >
+            <section section className="bg-white py-16" >
                 <div className="container mx-auto px-6">
                     <h2 className="text-4xl font-bold text-center text-frcGray mb-10 animate-fadeUp">
                         Connect with Us
@@ -69,7 +69,7 @@ export default function Contact() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         {/* Twitter */}
                         <a
-                            href="https://twitter.com/FrequencyCoin"
+                            href="https://x.com/CoinFrequency"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-6 rounded-lg shadow hover:shadow-lg hover:-translate-y-2 transition-all duration-300 bg-frcGray opacity-85"
@@ -81,7 +81,7 @@ export default function Contact() {
 
                         {/* Telegram */}
                         <a
-                            href="https://t.me/FrequencyCoinCommunity"
+                            href="https://t.me/frequency_coin"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-6 rounded-lg shadow hover:shadow-lg hover:-translate-y-2 transition-all duration-300 bg-frcGray opacity-85"
@@ -93,7 +93,7 @@ export default function Contact() {
 
                         {/* Discord */}
                         <a
-                            href="https://discord.gg/meDjjT2U"
+                            href="https://discord.gg/AKJjUj8c"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-6  bg-frcGray rounded-lg shadow hover:shadow-lg hover:-translate-y-2 transition-all duration-300 opacity-85"
@@ -107,7 +107,7 @@ export default function Contact() {
             </section >
 
             {/* Contact Form */}
-            <section section section className="py-16 bg-gray-100" >
+            <section section className="py-16 bg-gray-100" >
                 <div className="container mx-auto px-6">
                     <h2 className="text-4xl font-bold text-center text-frcGray mb-10">Send Us a Message</h2>
                     <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
@@ -165,7 +165,7 @@ export default function Contact() {
             </section >
 
             {/* Custom Animations */}
-            < style style jsx > {`
+            <style style jsx > {`
                 @keyframes bgShift {
                     0% {
                         background-position: 0% 50%;
@@ -190,7 +190,7 @@ export default function Contact() {
                         transform: translateY(0);
                     }
                 }
-            `}</ style>
+            `}</style>
         </>
     );
 }

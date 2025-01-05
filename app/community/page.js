@@ -33,7 +33,7 @@ export default function Community() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         {/* Twitter */}
                         <a
-                            href="https://twitter.com/FrequencyCoin"
+                            href="https://x.com/CoinFrequency"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-6 rounded-lg shadow hover:shadow-lg hover:-translate-y-2 transition-all duration-300 bg-frcGray opacity-85"
@@ -51,7 +51,7 @@ export default function Community() {
 
                         {/* Telegram */}
                         <a
-                            href="https://t.me/FrequencyCoinCommunity"
+                            href="https://t.me/frequency_coin"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-6 rounded-lg shadow hover:shadow-lg hover:-translate-y-2 transition-all duration-300 bg-frcGray opacity-85"
@@ -69,7 +69,7 @@ export default function Community() {
 
                         {/* Discord */}
                         <a
-                            href="https://discord.gg/meDjjT2U"
+                            href="https://discord.gg/AKJjUj8c"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-6  bg-frcGray rounded-lg shadow hover:shadow-lg hover:-translate-y-2 transition-all duration-300 opacity-85"
