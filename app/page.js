@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
 
-      <section className="relative h-screen flex items-center justify-center text-center text-frcWhite">
+      <section className="relative h-screen flex items-center justify-center text-center text-frcWhite  sm:py-32">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30 -z-10"
@@ -57,13 +57,14 @@ export default function Home() {
           </p>
           <a
             href="/ecosystem"
-            className="inline-block px-6 py-3 bg-frcBlue text-frcWhite font-bold rounded-lg hover:bg-frcPurple hover:text-frcWhite hover:scale-105 transition-all duration-300 shadow-md"
+            className="hidden sm:inline-block px-6 py-3 bg-frcBlue text-frcWhite font-bold rounded-lg hover:bg-frcPurple hover:text-frcWhite hover:scale-105 transition-all duration-300 shadow-md"
           >
             Explore the Ecosystem
           </a>
         </div>
       </section>
 
+      <Countdown />
 
 
 
@@ -128,7 +129,6 @@ export default function Home() {
       </section>
 
 
-      <Countdown />
 
       {/* Call-to-Action */}
       <section className="bg-frcWhite py-16 text-center rounded-b-3xl">
