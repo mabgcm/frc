@@ -24,7 +24,7 @@ export default function Footer() {
                     {/* Slogan */}
                     <div className="mb-4">
                         <h3 className="text-2xl font-bold text-frcPurple mb-2">Frequency Coin</h3>
-                        <p className="text-frcWhite">"Your Vibration, Your Reality"</p>
+                        <p className="text-frcWhite">"Smart Giving, Trust and Transparency"</p>
                     </div>
 
                     {/* Socials */}
