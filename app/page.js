@@ -177,11 +177,11 @@ export default function Home() {
             {[
               {
                 phase: "Phase 1: Q1 2025",
-                description: "Whitepaper release, community building, and establishing the ecosystem foundation.",
+                description: "Whitepaper release, community building, presale and exchange listing.",
               },
               {
                 phase: "Phase 2: Q2 2025",
-                description: "Token presale and exchange listing. Build liquidity and accessibility.",
+                description: "Establishing the ecosystem foundation. Build liquidity and accessibility.",
               },
               {
                 phase: "Phase 3: Q3 2025",

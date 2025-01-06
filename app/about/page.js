@@ -124,7 +124,7 @@ export default function About() {
                         Explore the detailed whitepaper to understand our vision, mission, and roadmap in depth.
                     </p>
                     <a
-                        href="/FRC_Whitepaper.pdf"
+                        href="/whitepaper.pdf"
                         download
                         className="inline-block px-6 py-3 bg-frcPurple text-frcWhite font-bold rounded-lg hover:bg-frcBlue hover:scale-105 transition-all duration-300 shadow-md"
                     >

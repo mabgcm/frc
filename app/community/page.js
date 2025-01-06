@@ -16,17 +16,26 @@ export default function Community() {
                 ></div>
                 <div className="relative z-10 px-6">
                     <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-frcPurple animate-fadeUp">
-                        Join the <span className="text-frcBlue">Frequency Community</span>
+                        Empowering <span className="text-frcBlue">Communities</span> <br />Building<span className="text-frcBlue">Futures</span>
                     </h1>
-                    <p className="text-lg text-frcWhite leading-relaxed max-w-3xl mx-auto animate-fadeUp">
-                        Connect, collaborate, and empower each other through the Frequency Coin ecosystem. Together, we can redefine financial aid with transparency and trust.
-                    </p>
+
                 </div>
             </section>
 
+
+
             {/* Connect on Social Media */}
             <section className="bg-white py-16">
-                <div className="container mx-auto px-6">
+
+                <div className="mb-12 text-center">
+                    <p className="text-gray-900 text-xl leading-relaxed mb-8 max-w-3xl mx-auto">
+                        Connect, collaborate, and empower one another through the Frequency Coin ecosystem. Together, we can
+                        redefine financial aid and provide a lifeline for those facing oppression, ensuring transparency, trust,
+                        and global impact.
+                    </p>
+                </div>
+
+                <div className="container mx-auto px-6 animate-fadeUp">
                     <h2 className="text-4xl font-bold text-center text-frcGray mb-10 animate-fadeUp">
                         Connect with Us
                     </h2>
@@ -88,26 +97,40 @@ export default function Community() {
                 </div>
             </section>
 
-            {/* Community Highlights */}
-            <section className="py-16 bg-gray-100">
+            {/* Highlights Section */}
+            <section className="py-16 bg-frcWhite">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-4xl font-bold text-center text-frcGray mb-10 animate-fadeUp">
+                    <h2 className="text-3xl font-bold text-center text-frcGray mb-10">
                         Community Highlights
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {/* User Story */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {/* Highlight Cards */}
                         <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                            <h3 className="text-2xl font-bold text-frcPurple mb-4">A Growing Network</h3>
-                            <p className="text-gray-700 leading-relaxed">
-                                Our community is expanding every day! From donors to project creators, Frequency Coin is connecting individuals and fostering trust through blockchain technology.
+                            <h3 className="text-2xl font-bold text-frcPurple mb-4 text-center">A Greater Good</h3>
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                The FRC community stands out by merging investment opportunities with meaningful impact, supporting those in need and creating a brighter future for all.
                             </p>
                         </div>
 
-                        {/* Community Events */}
                         <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                            <h3 className="text-2xl font-bold text-frcPurple mb-4">Empowering Events</h3>
-                            <p className="text-gray-700 leading-relaxed">
-                                Participate in virtual meetups, Q&A sessions, and exclusive workshops that empower members to maximize their impact and deepen their understanding of blockchain technology.
+                            <h3 className="text-2xl font-bold text-frcPurple mb-4 text-center">Blockchain Awareness</h3>
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                Our community understands the transformative power of blockchain technology and its ability to foster transparency, security, and trust globally.
+                            </p>
+                        </div>
+
+                        <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                            <h3 className="text-2xl font-bold text-frcPurple mb-4 text-center">Empowering the Oppressed</h3>
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                Frequency Coin aims to provide financial tools for individuals and groups facing systemic oppression,
+                                ensuring they have the resources to rebuild and thrive.
+                            </p>
+                        </div>
+
+                        <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                            <h3 className="text-2xl font-bold text-frcPurple mb-4 text-center">Community-Driven Innovation</h3>
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                Collaborate with like-minded individuals to drive change and support meaningful causes worldwide.
                             </p>
                         </div>
                     </div>
@@ -118,13 +141,14 @@ export default function Community() {
             <section className="bg-frcWhite text-frcGray py-16 text-center">
                 <h2 className="text-4xl font-bold mb-6 animate-fadeUp">Be Part of the Revolution</h2>
                 <p className="text-lg mb-8 max-w-2xl mx-auto text-gray-900 leading-relaxed animate-fadeUp">
-                    Join us and help redefine financial aid through blockchain technology. Together, we can create transparency, trust, and a global impact.
+                    Join a global movement that empowers the oppressed, supports the vulnerable, and redefines financial aid
+                    through blockchain technology. Together, we can create a world built on trust, transparency, and compassion.
                 </p>
                 <a
                     href="https://t.me/FrequencyCoinCommunity"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-6 py-3 bg-frcBlue text-frcWhite font-bold rounded-lg hover:bg-frcPurple hover:scale-105 transition-all duration-300 shadow-md"
+                    className="inline-block px-6 py-3 bg-frcPurple text-frcWhite font-bold rounded-lg hover:bg-frcGray hover:text-frcWhite hover:scale-105 transition-all duration-300 shadow-md"
                 >
                     Join the Community
                 </a>

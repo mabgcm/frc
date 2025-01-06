@@ -34,31 +34,32 @@ export default function Roadmap() {
                         <div className="p-6 bg-frcWhite shadow-lg rounded-xl transform hover:scale-105 transition-transform duration-300">
                             <h3 className="text-2xl font-bold text-frcPurple mb-4">Phase 1: Q1 2025</h3>
                             <p className="text-gray-700 leading-relaxed">
-                                Launch of the <span className="font-bold">whitepaper</span>, kickstarting the platform's vision, mission, and technical foundation. Community building and initial marketing campaigns begin to raise awareness and attract early adopters.
+                                Release of the <span className="font-bold">whitepaper</span> to outline the platform's vision and technical framework. <span className="font-bold">Community building</span> efforts commence alongside initial marketing campaigns to foster awareness and attract early adopters. <span className="font-bold">Presale</span> and <span className="font-bold">exchange listing</span> to establish initial market presence and accessibility.
                             </p>
                         </div>
                         {/* Phase 2 */}
                         <div className="p-6 bg-frcWhite shadow-lg rounded-xl transform hover:scale-105 transition-transform duration-300">
                             <h3 className="text-2xl font-bold text-frcPurple mb-4">Phase 2: Q2 2025</h3>
                             <p className="text-gray-700 leading-relaxed">
-                                Initiation of the <span className="font-bold">Token Presale</span> to provide early access and liquidity. Launch on decentralized and centralized exchanges, enabling global accessibility to Frequency Coin.
+                                Focus on building <span className="font-bold">liquidity</span> and <span className="font-bold">accessibility</span> through partnerships and decentralized exchange integration. Establishing the <span className="font-bold">ecosystem foundation</span> to ensure a robust infrastructure for future platform development.
                             </p>
                         </div>
                         {/* Phase 3 */}
                         <div className="p-6 bg-frcWhite shadow-lg rounded-xl transform hover:scale-105 transition-transform duration-300">
                             <h3 className="text-2xl font-bold text-frcPurple mb-4">Phase 3: Q3 2025</h3>
                             <p className="text-gray-700 leading-relaxed">
-                                Deployment of the <span className="font-bold">Beta Platform</span> with essential functionalities like project creation, donation tracking, and smart contract fund distribution. Feedback collection to optimize user experience.
+                                Launch of the <span className="font-bold">Beta Platform</span> with core functionalities, enabling users to create <span className="font-bold">projects</span> and track <span className="font-bold">funds</span>. Incorporating essential features like secure <span className="font-bold">fund distribution</span> and detailed <span className="font-bold">analytics</span> to optimize user experience.
                             </p>
                         </div>
                         {/* Phase 4 */}
                         <div className="p-6 bg-frcWhite shadow-lg rounded-xl transform hover:scale-105 transition-transform duration-300">
                             <h3 className="text-2xl font-bold text-frcPurple mb-4">Phase 4: Q4 2025</h3>
                             <p className="text-gray-700 leading-relaxed">
-                                Full release of the <span className="font-bold">Web Application</span>, featuring advanced analytics, user profiles, and Layer-2 scalability. Expanded marketing efforts target NGOs and corporate partnerships.
+                                Complete platform launch with <span className="font-bold">advanced features</span>, including enhanced <span className="font-bold">user profiles</span> and <span className="font-bold">analytics tools</span>. Achieving <span className="font-bold">scalability</span> through <span className="font-bold">Layer-2 integration</span> and targeted efforts to onboard <span className="font-bold">NGOs</span> and <span className="font-bold">corporate partners</span>.
                             </p>
                         </div>
                     </div>
+
                 </div>
             </section>
 
