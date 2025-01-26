@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 const Countdown = () => {
-    // Presale başlangıç tarihi (UTC)
-    const presaleDate = new Date("2025-01-23T07:00:00Z").getTime();
+    // End of presale time (UTC)
+    const presaleDate = new Date("2025-01-31T07:00:00Z").getTime();
 
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
@@ -30,7 +30,7 @@ const Countdown = () => {
     return (
         <section className="relative w-full bg-gradient-to-r from-frcBlue via-frcPurple to-frcBlue text-white py-16 sm:py-20">
             <div className="container mx-auto px-4 sm:px-6 text-center">
-                <h2 className="text-3xl sm:text-5xl font-bold mb-6 sm:mb-8 text-frcGray">Presale Countdown</h2>
+                <h2 className="text-3xl sm:text-5xl font-bold mb-6 sm:mb-8 text-frcGray">Presale Ends In:</h2>
                 <div className="flex flex-wrap justify-center items-center space-x-4 sm:space-x-8 text-xl sm:text-2xl font-bold">
                     <div className="flex flex-col items-center">
                         <span className="text-4xl sm:text-6xl">{timeLeft.days}</span>
@@ -51,16 +51,16 @@ const Countdown = () => {
                 </div>
 
 
-                {/* <a
+                <a
                     href="https://www.pinksale.finance/launchpad/polygon/0xB87937D7EB00AA14Db3e153817A15C6F15DC92d6"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-10 inline-block px-10 py-4 bg-frcWhite text-frcBlue font-bold rounded-lg hover:bg-frcGray hover:text-white transition-all duration-300 shadow-lg"
                 >
                     Join the Presale Now!
-                </a> */}
+                </a>
 
-                {timeLeft.days + timeLeft.hours + timeLeft.minutes + timeLeft.seconds === 0 ? (
+                {/* {timeLeft.days + timeLeft.hours + timeLeft.minutes + timeLeft.seconds === 0 ? (
                     <a
                         href="https://www.pinksale.finance/launchpad/polygon/0xB87937D7EB00AA14Db3e153817A15C6F15DC92d6"
                         target="_blank"
@@ -71,7 +71,7 @@ const Countdown = () => {
                     </a>
                 ) : (
                     <p className="mt-10 text-xl">Get ready to join our presale and be part of the future of transparent giving!</p>
-                )}
+                )} */}
             </div>
         </section>
     );
